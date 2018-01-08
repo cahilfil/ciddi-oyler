@@ -1,17 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-08 15:32:18.652352 UTC
+2018-01-08 16:47:48.792276 UTC
 
 interface main:Euler 8022
-  interface hash: e3d8b6d8d12885361824f4b01c3204ec
-  ABI hash: e48301df938dd733decc3c38b03f204b
-  export-list hash: d86f49a01e2578bf5fdfc2129dc0cc25
+  interface hash: 468dc56c6b40db62c4c6b13179c14277
+  ABI hash: b9783e850a3971cf99e9ea6a61ec824a
+  export-list hash: 479874449d43153fe4d0aa8bc367295f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 3e29845890ab6820324aba5330df4645
   sig of: Nothing
   used TH splices: False
   where
 exports:
+  Euler.count
   Euler.solve
 module dependencies:
 package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
@@ -60,6 +61,9 @@ d0383ff8b7a4cd83cc6b6df783efcc24
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [0] -}
+bd58c195a43ef33ea64417e2b84e8154
+  count :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
 c2386f7669f1daaee3a16174ca219242
   solve :: GHC.Types.Int -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S(S),1*U(1*U)><S,U>,

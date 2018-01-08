@@ -1,6 +1,10 @@
-module Euler(solve) where
+module Euler(solve, count) where
 
 import System.IO
+
+-- Don't forget increase the counter!
+count :: Int
+count = 1
 
 out :: Show a => a -> String
 out s = "result: " ++ show s
