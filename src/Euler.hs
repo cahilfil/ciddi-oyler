@@ -2,7 +2,7 @@ module Euler(solve, count) where
 
 import System.IO
 
--- Don't forget increase the counter!
+-- Don't forget to increase the counter!
 count :: Int
 count = 1
 
