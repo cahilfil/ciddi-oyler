@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/bin"
-libdir     = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/lib/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0-9D3djR9wPqlAg6ZLMsMsUl-ciddi-oyler"
-dynlibdir  = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/lib/x86_64-osx-ghc-8.2.2"
-datadir    = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/share/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0"
-libexecdir = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/libexec/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0"
-sysconfdir = "/Users/yunus/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/etc"
+bindir     = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/bin"
+libdir     = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/lib/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0-BPoH1otUkjMDfsq0hRrpnM-ciddi-oyler"
+dynlibdir  = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/lib/x86_64-osx-ghc-8.2.2"
+datadir    = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/share/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0"
+libexecdir = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/libexec/x86_64-osx-ghc-8.2.2/ciddi-oyler-0.1.0.0"
+sysconfdir = "/Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "ciddi_oyler_bindir") (\_ -> return bindir)

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-08 16:51:07.743908 UTC
+2018-01-09 13:33:35.720533 UTC
 
 interface main:Main 8022
-  interface hash: 579e8edbccae1c1d7a300313b115feff
-  ABI hash: 3a1699210109575b2031f1f6116a485c
-  export-list hash: f771e351bdd1727b0d1a620d7b529ff0
+  interface hash: 410f0465e6b6ad839e72f7379b3d9abd
+  ABI hash: 25c1515a3289ebc5b67f4577280421c9
+  export-list hash: 93d8c11e7e51da8156dcd3c3f74f0e5a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ea51d416926a912995dd3227aef297f8
   sig of: Nothing
@@ -14,9 +14,11 @@ interface main:Main 8022
 exports:
   Main.main
 module dependencies: Euler
-package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
-                      integer-gmp-1.0.1.0
-orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+package dependencies: MissingH-1.4.0.1 base-4.10.1.0* extra-1.6.2
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      text-format-simple-1.1.0 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
 family instance modules: base-4.10.1.0:Control.Applicative
                          base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
                          base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
@@ -33,9 +35,9 @@ import  -/  base-4.10.1.0:System.IO 525805ab19df5e4fe6d8de7dde9cb909
 import  -/  base-4.10.1.0:Text.Read 9e862e012b3c71e83cb56fb456188f44
 import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
-import  -/  Euler b9783e850a3971cf99e9ea6a61ec824a
-  exports: 479874449d43153fe4d0aa8bc367295f
-  count bd58c195a43ef33ea64417e2b84e8154
+import  -/  Euler 3d1c2862b084cc399d9841df5571e5fc
+  exports: b7ed2db55feba2aa14331b8d67b78bc1
+  count 715cea2051bc154967f70eb0aad44507
   solve c2386f7669f1daaee3a16174ca219242
 9d72b2fddb818bcd8919052935e0f1f3
   $trModule :: GHC.Types.Module
@@ -55,12 +57,12 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-15bcdbf3b679ee83be298485b5a3bbf3
+8538c7cd113005bbf1e7ad753c827ee7
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-32c0d141ea202b26f9fd0fca6b653935
+123eed0b20a1eb16eff75230b0a0945c
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -116,7 +118,7 @@ d026be77cb9ced20e35a61514e0458aa
 3409731aa394756f405bd26a0bca8468
   main11 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Wow! Apparently, you've solved "#) -}
-4061e4ca9d289e3a47d6fcdef4759e76
+093e50b8964054ffe8b77f7b1827136b
   main12 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -137,33 +139,33 @@ ffb569146bf9df9d2f5eb75d1ab97a0a
                    Text.ParserCombinators.ReadPrec.minPrec
                    @ GHC.Types.Int
                    (Text.Read.readEither7 @ GHC.Types.Int)) -}
-d104ea60b632224410ccae45fcced4cd
+2703a40ae17342fb34947bd0d7c3da03
   main5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    Main.main11
                    Main.main6) -}
-005e98fb55b867c481bccfe90407b084
+2045f1a5a87d626cc17a60ffd1654d73
   main6 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$wshowSignedInt
                         0#
-                        1#
+                        2#
                         (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
                  GHC.Base.++
                    @ GHC.Types.Char
                    (GHC.Types.: @ GHC.Types.Char ww5 ww6)
                    Main.main7 }) -}
-aa107f2b4d7cb8e0ed4b4137ddf94935
+30f7cc903183ea0669873c9806b34aec
   main7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    Main.main10
                    Main.main8) -}
-299f28c30d5e20fb07ae0dd2c75df28e
+fea83bb8a5bb465b533200b5dffb5f9d
   main8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Main.main9) -}
-78dd95eca404d81e3a215a1dc644a931
+434332732ecb3756d26f2a1cba05b03a
   main9 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: (".\n\
+     Unfolding: ("s.\n\
                  \\n"#) -}
 vectorised variables:
 vectorised tycons:

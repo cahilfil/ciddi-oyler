@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-08 16:47:48.792276 UTC
+2018-01-09 13:35:42.191824 UTC
 
 interface main:Euler 8022
-  interface hash: 468dc56c6b40db62c4c6b13179c14277
-  ABI hash: b9783e850a3971cf99e9ea6a61ec824a
-  export-list hash: 479874449d43153fe4d0aa8bc367295f
+  interface hash: 00ee6a71d26e0d80dd9fc8c5e7be36fe
+  ABI hash: 3d1c2862b084cc399d9841df5571e5fc
+  export-list hash: b7ed2db55feba2aa14331b8d67b78bc1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 3e29845890ab6820324aba5330df4645
   sig of: Nothing
@@ -15,9 +15,11 @@ exports:
   Euler.count
   Euler.solve
 module dependencies:
-package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
-                      integer-gmp-1.0.1.0
-orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+package dependencies: MissingH-1.4.0.1 base-4.10.1.0* extra-1.6.2
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      text-format-simple-1.1.0 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
 family instance modules: base-4.10.1.0:Control.Applicative
                          base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
                          base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
@@ -29,14 +31,17 @@ import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
 import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
 import  -/  base-4.10.1.0:GHC.IO.Handle 5f614cc041d5fa954b0de4d7c73104fe
 import  -/  base-4.10.1.0:GHC.IO.Handle.FD ff7d0cb6466e387dd97a071e05fa192a
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
 import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
 import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
 import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
 import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
 import  -/  base-4.10.1.0:System.IO 525805ab19df5e4fe6d8de7dde9cb909
 import  -/  base-4.10.1.0:Text.Read 9e862e012b3c71e83cb56fb456188f44
+import  -/  extra-1.6.2:Data.List.Extra 74884d72cbe0b76db77516b34b88fca7
 import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  text-format-simple-1.1.0:Text.Format 9fd7a6157d5ea15b82cafe31073611ce
 971424787759d3f577e75ca7066c24fe
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -61,9 +66,9 @@ d0383ff8b7a4cd83cc6b6df783efcc24
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [0] -}
-bd58c195a43ef33ea64417e2b84e8154
+715cea2051bc154967f70eb0aad44507
   count :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
 c2386f7669f1daaee3a16174ca219242
   solve :: GHC.Types.Int -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <S(S),1*U(1*U)><S,U>,

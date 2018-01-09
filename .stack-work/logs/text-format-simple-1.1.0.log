@@ -1,0 +1,6 @@
+Configuring text-format-simple-1.1.0...
+Preprocessing library for text-format-simple-1.1.0..
+Building library for text-format-simple-1.1.0..
+[1 of 1] Compiling Text.Format      ( Text/Format.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Text/Format.o )
+Installing library in /Users/yunus/projects/ciddi-oyler/.stack-work/install/x86_64-osx/lts-10.3/8.2.2/lib/x86_64-osx-ghc-8.2.2/text-format-simple-1.1.0-CZ0Z1CK4GuC7TALCsw8WXh
+Registering library for text-format-simple-1.1.0..

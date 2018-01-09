@@ -22,6 +22,28 @@
   (major1) == 4 && (major2) == 10 && (minor) <= 1)
 #endif /* MIN_VERSION_base */
 
+/* package extra-1.6.2 */
+#ifndef VERSION_extra
+#define VERSION_extra "1.6.2"
+#endif /* VERSION_extra */
+#ifndef MIN_VERSION_extra
+#define MIN_VERSION_extra(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  6 || \
+  (major1) == 1 && (major2) == 6 && (minor) <= 2)
+#endif /* MIN_VERSION_extra */
+
+/* package text-format-simple-1.1.0 */
+#ifndef VERSION_text_format_simple
+#define VERSION_text_format_simple "1.1.0"
+#endif /* VERSION_text_format_simple */
+#ifndef MIN_VERSION_text_format_simple
+#define MIN_VERSION_text_format_simple(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  1 || \
+  (major1) == 1 && (major2) == 1 && (minor) <= 0)
+#endif /* MIN_VERSION_text_format_simple */
+
 /* tool alex-3.2.1 */
 #ifndef TOOL_VERSION_alex
 #define TOOL_VERSION_alex "3.2.1"
@@ -133,7 +155,7 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "ciddi-oyler-0.1.0.0-9D3djR9wPqlAg6ZLMsMsUl-ciddi-oyler"
+#define CURRENT_COMPONENT_ID "ciddi-oyler-0.1.0.0-BPoH1otUkjMDfsq0hRrpnM-ciddi-oyler"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"
